@@ -1,0 +1,80 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 15926478600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestSteps.beforeTest()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "purchasing first of new arrivals book",
+        "description": "",
+        "id": "purchasing-book-from-bookstore;purchasing-first-of-new-arrivals-book",
+        "after": [
+          {
+            "result": {
+              "duration": 265787200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestSteps.afterTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 19159437100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User choose book and proceeding purchase operation",
+            "match": {
+              "location": "TestSteps.stepsToBuyBook()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 203460400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click on place order button",
+            "match": {
+              "location": "TestSteps.stepToCreateOrder()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7302723600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Order details are correct",
+            "match": {
+              "location": "TestSteps.assertOrderDetailFields()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Purchasing book from bookstore",
+    "description": "",
+    "id": "purchasing-book-from-bookstore",
+    "keyword": "Feature",
+    "uri": "PurchaseOperation.feature"
+  }
+]
