@@ -40,15 +40,15 @@ public class DriverManager {
     private static WebDriver createDriver() {
         switch (browserType) {
             case FIREFOX:
-                System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
+                System.setProperty("webdriver.gecko.driver", "drivers/geckodriver.exe");
                 driver = new FirefoxDriver();
                 break;
             case CHROME:
-                System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
                 driver = new ChromeDriver();
                 break;
             case EDGE:
-                System.setProperty("webdriver.edge.driver", "msedgedriver.exe");
+                System.setProperty("webdriver.edge.driver", "drivers/msedgedriver.exe");
                 driver = new EdgeDriver();
                 break;
         }
